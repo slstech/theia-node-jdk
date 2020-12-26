@@ -103,7 +103,7 @@ ENV strip=$strip
 
 USER theia
 WORKDIR /home/theia
-ADD ./package.json
+ADD package.json .
 
 RUN if [ "$strip" = "true" ]; then \
 yarn --pure-lockfile && \
