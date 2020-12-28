@@ -2,7 +2,7 @@ FROM ubuntu:18.04 as common
 
 ENV DEBIAN_FRONTEND noninteractive
 
-ARG NODE_VERSION=12.18.3
+ARG NODE_VERSION=12.20.0
 ENV NODE_VERSION $NODE_VERSION
 ENV YARN_VERSION 1.22.5
 
@@ -18,6 +18,7 @@ RUN apt-get update && \
                        sudo \
                        apt-transport-https \
                        gnupg \
+                       language-pack-zh-hans \
     && \
     apt-get clean && \
     apt-get autoremove -y && \
@@ -31,7 +32,7 @@ RUN adduser --disabled-password --gecos '' theia && \
     echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 # Install node and yarn
-# From: https://github.com/nodejs/docker-node/blob/6b8d86d6ad59e0d1e7a94cec2e909cad137a028f/8/Dockerfile
+# From: https://github.com/nodejs/docker-node/
 
 # gpg keys listed at https://github.com/nodejs/node#release-keys
 RUN set -ex \
