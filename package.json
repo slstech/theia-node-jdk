@@ -107,7 +107,7 @@
         "vscode-java-test": "https://github.com/microsoft/vscode-java-test/releases/download/0.26.1/vscjava.vscode-java-test-0.26.1.vsix",
         "vetur": "https://open-vsx.org/api/octref/vetur/0.31.3/file/octref.vetur-0.31.3.vsix",
         "prettier": "https://open-vsx.org/api/esbenp/prettier-vscode/5.8.0/file/esbenp.prettier-vscode-5.8.0.vsix",
-        "bracket-pair-colorizer-2": "https://open-vsx.org/api/CoenraadS/bracket-pair-colorizer-2/0.2.0/file/CoenraadS.bracket-pair-colorizer-2-0.2.0.vsix"
+        "bracket-pair-colorizer-2": "https://open-vsx.org/api/CoenraadS/bracket-pair-colorizer-2/0.2.0/file/CoenraadS.bracket-pair-colorizer-2-0.2.0.vsix",
         "yangster": "https://open-vsx.org/api/typefox/yang-vscode/2.0.3/file/typefox.yang-vscode-2.0.3.vsix"
     }
 }
